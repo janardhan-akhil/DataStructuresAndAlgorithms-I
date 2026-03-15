@@ -2,7 +2,7 @@ package com.arrays;
 
 public class TrappingRainWater1 {
 	
-	public static int trappintWater1(int[] arr) {
+	public static int trappingWater1(int[] arr) {
 		if(arr.length == 1 || arr.length == 2) {
 			return -1;
 		}
@@ -26,7 +26,7 @@ public class TrappingRainWater1 {
 		}
 		return res;
 	}
-	public static int trappintWater2(int[] arr) {
+	public static int trappingWater2(int[] arr) {
 		int lhb = arr[0], rhb = arr[arr.length-1], res = 0;
 		int i=0, j=arr.length-1;
 		while(i<=j) {
@@ -54,7 +54,7 @@ public class TrappingRainWater1 {
 	 
 	public static void main(String[] args) {
 		int[] arr = {0,1,0,2,1,0,1,3,2,1,2,1};
-		System.out.println(trappintWater2(arr));
+		System.out.println(trappingWater2(arr));
 
 	}
 
